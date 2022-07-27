@@ -1,0 +1,210 @@
+/**** CSS Reset ****/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+img, ins, kbd, q, s, samp,
+smbackground, strike, strong,
+dl, dt, dd, ol, ul, li,
+figure, figcaption,
+iframe,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: text-top;
+	background: transparent;
+}
+a, a:hover 	{
+    text-decoration: none; 
+    transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; 
+}
+
+
+/**** Font ****/
+@font-face {
+    font-family: 'myEmprint';
+    src: url('../font/EMprint-Regular.ttf');
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'myEmprintBd';
+    src: url('../font/EMprint-Bold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'myEmprintLt';
+    src: url('../font/EMprint-Light.ttf');
+	font-display: swap;
+}
+@font-face {
+    font-family: 'myEmprintSb';
+    src: url('../font/EMprint-Semibold.ttf');
+	font-display: swap;
+}
+/*****************/
+
+.head{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	background: rgb(58,57,123);
+	background: radial-gradient(circle, rgba(58,57,123,1) 0%, rgba(12,105,176,1) 100%);
+	padding: 10px 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.top-adjust{
+	margin-top: 90px;
+}
+
+.main-wrap{
+	margin: 0 auto;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+.head .navbar {background: transparent!important;}
+.head .nav-link{
+	margin-right: 25px;
+	font: 400 14px 'myEmprint', arial;
+	color: #fff!important;
+	padding: 5px 0!important;
+	border-bottom: 1px solid transparent;
+}
+
+.head .nav-link:hover{
+	border-bottom: 1px solid #61a8ed;
+}
+.head .nav-link.active{
+	border-bottom: 1px solid #61a8ed;
+}
+.head .dropdown-toggle::after{
+	margin-left: 1em;
+}
+
+.head .dropdown-item{
+	font: 400 13px 'myEmprint', arial;
+}
+.navbar-toggler-icon {
+	background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 32 32′ xmlns=’http://www.w3.org/2000/svg’%3E%3Cpath stroke=’rgba(0, 128, 0, 0.8)’ stroke-width=’2′ stroke-linecap=’round’ stroke-miterlimit=’10’ d=’M4 8h24M4 16h24M4 24h24’/%3E%3C/svg%3E”);
+	}
+/**Top Nav**/
+.top-banner-link:hover{
+	opacity: 0.9;
+}
+.page-header{
+	font: 400 25px 'myEmprint', arial;
+	color: #000;
+	margin: 25px 0;
+}
+.sub-heading{
+	font: 400 22px 'myEmprintSb', arial;
+	color: #00a3e0;
+	display: inline-block;
+	margin: 35px 0 25px 0;
+	border-bottom: 2px solid #00a3e0;
+}
+
+.ex{
+	border:1px solid #ccc;
+	border-bottom: 0;
+	border-right: 0;
+	padding: 20px 15px;
+}
+
+.ex:nth-last-child(2){
+	border-right: 1px solid #ccc;
+}
+
+.ex-top{
+	border-bottom:1px solid #ccc;
+	margin-bottom: -1px;
+}
+
+.box-head{
+	font: 400 14px 'myEmprintSb', arial;
+	color: #111122;
+}
+
+.box-img{
+	display: block;
+}
+.box-img img{
+	max-width: 80%;
+}
+
+.box-img:hover{
+	opacity: 0.6;
+}
+
+
+/** Footer Start **/
+
+.footer-bg{
+	background: rgb(58,57,123);
+	background: radial-gradient(circle, rgba(58,57,123,1) 0%, rgba(12,105,176,1) 100%);
+	padding: 30px 0;
+}
+
+/*****************/
+.bg-grey            { background-color: #e0e0e0; }
+
+.txt-lt-aqua { color: #00edb4; }
+.txt-lt-blue { color: #00c4c3; }
+.txt-lt-blue-2 { color: #21C5C5; }
+.txt-dark-blue { color: #093659; }
+.txt-yellow  { color: #FFB600; }
+.txt-blue  { color: #009FFF; }
+.txt-white  { color: #fff; }
+.txt-blue2 {color: #565F6C;}
+
+
+.txt-darkish { color: #2A3E56; }
+.txt-purple { color: #5E23DC; }
+.txt-pink { color: #FD4E8D; }
+
+
+.font40 { font-size: 2.500rem; font-weight: bold; }
+.font24 { font-size: 1.500em; font-weight: 100; }
+.font30 { font-size: 1.750em; }
+.font20 { font-size: 1.250em; }
+.font18 { font-size: 1.125em; }
+.font14 { font-size: 0.875em; }
+.font12 { font-size: 0.750rem; }
+
+.w-60 { max-width: 60%; }
+.w-80 { max-width: 80%; }
+.w-260 { max-width: 260px; }
+
+.pl-80  { padding-left: 80px; }
+.py-80  { padding-top: 80px; padding-bottom: 80px; }
+.py-100 { padding-top: 100px; padding-bottom: 100px; }
+.py-125 { padding-top: 125px; padding-bottom: 125px; }
+.py-220 { padding-top: 220px; padding-bottom: 220px; }
+.pt-200 { padding-top: 200px; }
+.mt-100 { padding-top: 100px; }
+.mt-70 { padding-top: 70px; }
+.mt-150 { padding-top: 150px; }
+
+/*****************/
+.clear 			{ clear: both; height: 0px; line-height: 0px; }
+.spacer 		{ clear: both; height: 5px; line-height: 5px; }
+.spacer-large 	{ clear: both; height: 10px; line-height: 10px; }
+.spacer-huge 	{ clear: both; height: 20px; line-height: 20px; }
+.spacer-big	 	{ clear: both; height: 30px; line-height: 20px; }
+.spacer-mega 	{ clear: both; height: 40px; line-height: 20px; }
+.spacer-wow 	{ clear: both; height: 60px; line-height: 20px; }
+
+
+
+
+@media screen and (max-width: 767px) {
+	.head .nav-link{
+		margin-top: 10px;
+	}
+	.ex	{border-right: 1px solid #ccc;}
+}
